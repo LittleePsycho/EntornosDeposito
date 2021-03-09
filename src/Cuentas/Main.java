@@ -1,18 +1,23 @@
 package Cuentas;
 
 /**
- *
+ * Main.class
  * @author Littlee_Psycho :)
+ * @version 1.1
+ * @since 09/03/2021
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         operativa_cuenta(0);
     }  
-
+    
+    /**
+     * @param cantidad
+     * Este metodo devuelve un @throws Exception dentro de un try-catch
+     */
+    
     public static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;

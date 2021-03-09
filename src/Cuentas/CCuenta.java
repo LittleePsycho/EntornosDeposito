@@ -1,8 +1,10 @@
 package Cuentas;
 
 /**
- *
+ * CCuenta.class
  * @author Littlee_Psycho :)
+ * @version 1.0
+ * @since 02/03/2021
  */
 public class CCuenta {
     
@@ -11,75 +13,80 @@ public class CCuenta {
     private double saldo;
     private double tipoInteres;
     
-    /**
-     * @return the nombre
-     */
-    public String getNombre() {
-        return nombre;
-    }
-
-    /**
-     * @param nombre the nombre to set
-     */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    /**
-     * @return the cuenta
-     */
-    public String getCuenta() {
-        return cuenta;
-    }
-
-    /**
-     * @param cuenta the cuenta to set
-     */
-    public void setCuenta(String cuenta) {
-        this.cuenta = cuenta;
-    }
-
-    /**
-     * @return the saldo
-     */
-    public double getSaldo() {
-        return saldo;
-    }
-
-    /**
-     * @param saldo the saldo to set
-     */
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
-    /**
-     * @return the tipoInteres
-     */
-    public double getTipoInteres() {
-        return tipoInteres;
-    }
-
-    /**
-     * @param tipoInteres the tipoInteres to set
-     */
-    public void setTipoInteres(double tipoInteres) {
-        this.tipoInteres = tipoInteres;
-    }
-    
-    public CCuenta(){
-        
-    }
-    
     public CCuenta(String nom, String cue, double sal, double tipo){
         nombre = nom;
         cuenta = cue;
         saldo = sal;
     }
     
+    /**
+     * @return nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nom y lo iguala a nombre
+     */
+    public void setNombre(String nom) {
+        this.nombre = nom;
+    }
+
+    /**
+     * @return cuenta
+     */
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    /**
+     * @param cuent y lo iguala a cuenta
+     */
+    public void setCuenta(String cuent) {
+        this.cuenta = cuent;
+    }
+
+    /**
+     * @return saldo
+     */
+    public double getSaldo() {
+        return saldo;
+    }
+
+    /**
+     * @param sald y lo iguala a saldo
+     */
+    public void setSaldo(double sald) {
+        this.saldo = sald;
+    }
+
+    /**
+     * @return tipoInteres
+     */
+    public double getTipoInteres() {
+        return tipoInteres;
+    }
+
+    /**
+     * @param tipoIntereses y lo iguala a tipoInteres
+     */
+    public void setTipoInteres(double tipoIntereses) {
+        this.tipoInteres = tipoIntereses;
+    }
+    
+    /**
+     * @return el metodo getSaldo
+     */
+    
     public double estado(){
         return getSaldo();
     }
+    
+    /**
+     * @param cantidad
+     * @throws Exception
+     */
     
     public void ingresar(double cantidad) throws Exception{
         if (cantidad<0){
@@ -87,6 +94,11 @@ public class CCuenta {
         }
         setSaldo(getSaldo() + cantidad);
     }
+    
+    /**
+     * @param cantidad
+     * @throws Exception
+     */
     
     public void retirar(double cantidad) throws Exception{
         if (cantidad <= 0){
