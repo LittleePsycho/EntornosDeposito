@@ -5,6 +5,8 @@ package Cuentas;
  * @author Littlee_Psycho :)
  * @version 1.0
  * @since 02/03/2021
+ * Si pones autor pones tu nombre real
+ * El enlace al repositorio se tenía que incluir en el trabajo
  */
 public class CCuenta {
     
